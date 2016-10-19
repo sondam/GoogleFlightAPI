@@ -1,0 +1,440 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "AI4ZcxlbPWR97dJs60PHt0",
+  "data": {
+   "kind": "qpxexpress#data",
+   "airport": [
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "BOM",
+     "city": "BOM",
+     "name": "Mumbai/Bombay Chhatrapati Shivaji Int'l"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "FRA",
+     "city": "FRA",
+     "name": "Frankfurt International"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "KWI",
+     "city": "KWI",
+     "name": "Kuwait International"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "RUH",
+     "city": "RUH",
+     "name": "Riyadh King Khalid International"
+    }
+   ],
+   "city": [
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "BOM",
+     "name": "Mumbai"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "FRA",
+     "name": "Frankfurt"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "KWI",
+     "name": "Kuwait"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "RUH",
+     "name": "Riyadh"
+    }
+   ],
+   "aircraft": [
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "320",
+     "name": "Airbus A320"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "330",
+     "name": "Airbus A330"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "747",
+     "name": "Boeing 747"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "772",
+     "name": "Boeing 777"
+    }
+   ],
+   "tax": [
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "YX_001",
+     "name": "Kuwait Passenger Service Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "DE_001",
+     "name": "Germany Airport Security Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "E3_001",
+     "name": "Saudi Arabia Security Charges International Departure"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "E3_002",
+     "name": "Saudi Arabia Security Charges International Arrivals"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "YQ_I",
+     "name": "KU YQ surcharge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "OY_001",
+     "name": "Germany Air Transport Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "RA_002",
+     "name": "German Passenger Service Charge"
+    }
+   ],
+   "carrier": [
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "KU",
+     "name": "Kuwait Airways"
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "SV",
+     "name": "Saudi Arabian Airlines"
+    }
+   ]
+  },
+  "tripOption": [
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "EUR340.94",
+    "id": "N4Rp0k9UrW3NcSaRRKqTcU001",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 625,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 335,
+        "flight": {
+         "carrier": "KU",
+         "number": "172"
+        },
+        "id": "GXqPiNL4crEakWAo",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LasWoIbwj15uEQqn",
+          "aircraft": "330",
+          "arrivalTime": "2016-10-25T21:50+03:00",
+          "departureTime": "2016-10-25T15:15+02:00",
+          "origin": "FRA",
+          "destination": "KWI",
+          "originTerminal": "2",
+          "destinationTerminal": "M",
+          "duration": 335,
+          "mileage": 2497,
+          "meal": "Meal",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 40
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 250,
+        "flight": {
+         "carrier": "KU",
+         "number": "301"
+        },
+        "id": "GEQKhHqJYVxKnQQx",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LdaFcDEPmlLRmCPY",
+          "aircraft": "747",
+          "arrivalTime": "2016-10-26T05:10+05:30",
+          "departureTime": "2016-10-25T22:30+03:00",
+          "origin": "KWI",
+          "destination": "BOM",
+          "originTerminal": "M",
+          "destinationTerminal": "2",
+          "duration": 250,
+          "mileage": 1713,
+          "meal": "Meal",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "carrier": "KU",
+        "origin": "FRA",
+        "destination": "BOM",
+        "basisCode": "LLOWDE1"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "segmentId": "GXqPiNL4crEakWAo"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "segmentId": "GEQKhHqJYVxKnQQx"
+       }
+      ],
+      "baseFareTotal": "EUR247.00",
+      "saleFareTotal": "EUR247.00",
+      "saleTaxTotal": "EUR93.94",
+      "saleTotal": "EUR340.94",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "YX_001",
+        "chargeType": "GOVERNMENT",
+        "code": "YX",
+        "country": "KW",
+        "salePrice": "EUR0.73"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "YQ_I",
+        "chargeType": "CARRIER_SURCHARGE",
+        "code": "YQ",
+        "salePrice": "EUR9.12"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "DE_001",
+        "chargeType": "GOVERNMENT",
+        "code": "DE",
+        "country": "DE",
+        "salePrice": "EUR9.10"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "OY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "OY",
+        "country": "DE",
+        "salePrice": "EUR41.49"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "RA_002",
+        "chargeType": "GOVERNMENT",
+        "code": "RA",
+        "country": "DE",
+        "salePrice": "EUR33.50"
+       }
+      ],
+      "fareCalculation": "FRA KU X/KWI KU BOM 277.19LLOWDE1 NUC 277.19 END ROE 0.891079 FARE EUR 247.00 XT 9.10DE 41.49OY 33.50RA 0.73YX 9.12YQ",
+      "latestTicketingTime": "2016-10-25T09:14-04:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "EUR352.73",
+    "id": "N4Rp0k9UrW3NcSaRRKqTcU002",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 705,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 375,
+        "flight": {
+         "carrier": "SV",
+         "number": "180"
+        },
+        "id": "GbIGW-yPAfLpUWbW",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LCOVcd63e4iM1qzk",
+          "aircraft": "320",
+          "arrivalTime": "2016-10-25T23:30+03:00",
+          "departureTime": "2016-10-25T16:15+02:00",
+          "origin": "FRA",
+          "destination": "RUH",
+          "originTerminal": "2",
+          "destinationTerminal": "2",
+          "duration": 375,
+          "mileage": 2666,
+          "meal": "Meal",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 95
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 235,
+        "flight": {
+         "carrier": "SV",
+         "number": "748"
+        },
+        "id": "GfB7TwxTLFPz5hcc",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LBdb6D1HMfFwA5Cs",
+          "aircraft": "772",
+          "arrivalTime": "2016-10-26T07:30+05:30",
+          "departureTime": "2016-10-26T01:05+03:00",
+          "origin": "RUH",
+          "destination": "BOM",
+          "originTerminal": "2",
+          "destinationTerminal": "2",
+          "duration": 235,
+          "mileage": 1720,
+          "meal": "Meal",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "As2pu5DOMb9C7B4EjLy9iZHYR8e/UENtYzhQ26rvf3+2",
+        "carrier": "SV",
+        "origin": "FRA",
+        "destination": "BOM",
+        "basisCode": "TOWSVR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "As2pu5DOMb9C7B4EjLy9iZHYR8e/UENtYzhQ26rvf3+2",
+        "segmentId": "GbIGW-yPAfLpUWbW"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "As2pu5DOMb9C7B4EjLy9iZHYR8e/UENtYzhQ26rvf3+2",
+        "segmentId": "GfB7TwxTLFPz5hcc"
+       }
+      ],
+      "baseFareTotal": "EUR265.00",
+      "saleFareTotal": "EUR265.00",
+      "saleTaxTotal": "EUR87.73",
+      "saleTotal": "EUR352.73",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "E3_002",
+        "chargeType": "GOVERNMENT",
+        "code": "E3",
+        "country": "SA",
+        "salePrice": "EUR1.82"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "OY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "OY",
+        "country": "DE",
+        "salePrice": "EUR41.49"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "DE_001",
+        "chargeType": "GOVERNMENT",
+        "code": "DE",
+        "country": "DE",
+        "salePrice": "EUR9.10"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "RA_002",
+        "chargeType": "GOVERNMENT",
+        "code": "RA",
+        "country": "DE",
+        "salePrice": "EUR33.50"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "E3_001",
+        "chargeType": "GOVERNMENT",
+        "code": "E3",
+        "country": "SA",
+        "salePrice": "EUR1.82"
+       }
+      ],
+      "fareCalculation": "FRA SV X/RUH SV BOM 297.39TOWSVR NUC 297.39 END ROE 0.891079 FARE EUR 265.00 XT 9.10DE 41.49OY 33.50RA 3.64E3",
+      "latestTicketingTime": "2016-10-25T10:14-04:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   }
+  ]
+ }
+}
