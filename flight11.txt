@@ -1,0 +1,249 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "bOs11NAWCJcBrh8Pa0PHtY",
+  "data": {
+   "kind": "qpxexpress#data",
+   "airport": [
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "BOM",
+     "city": "BOM",
+     "name": "Mumbai/Bombay Chhatrapati Shivaji Int'l"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "FRA",
+     "city": "FRA",
+     "name": "Frankfurt International"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "KWI",
+     "city": "KWI",
+     "name": "Kuwait International"
+    }
+   ],
+   "city": [
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "BOM",
+     "name": "Mumbai"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "FRA",
+     "name": "Frankfurt"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "KWI",
+     "name": "Kuwait"
+    }
+   ],
+   "aircraft": [
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "330",
+     "name": "Airbus A330"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "747",
+     "name": "Boeing 747"
+    }
+   ],
+   "tax": [
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "YX_001",
+     "name": "Kuwait Passenger Service Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "DE_001",
+     "name": "Germany Airport Security Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "YQ_I",
+     "name": "KU YQ surcharge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "OY_001",
+     "name": "Germany Air Transport Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "RA_002",
+     "name": "German Passenger Service Charge"
+    }
+   ],
+   "carrier": [
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "KU",
+     "name": "Kuwait Airways"
+    }
+   ]
+  },
+  "tripOption": [
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "EUR340.94",
+    "id": "DLCTaNA1IOSPigeaZM3Px9001",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 625,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 335,
+        "flight": {
+         "carrier": "KU",
+         "number": "172"
+        },
+        "id": "GXqPiNL4crEakWAo",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LasWoIbwj15uEQqn",
+          "aircraft": "330",
+          "arrivalTime": "2016-10-25T21:50+03:00",
+          "departureTime": "2016-10-25T15:15+02:00",
+          "origin": "FRA",
+          "destination": "KWI",
+          "originTerminal": "2",
+          "destinationTerminal": "M",
+          "duration": 335,
+          "mileage": 2497,
+          "meal": "Meal",
+          "secure": true
+         }
+        ],
+        "connectionDuration": 40
+       },
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 250,
+        "flight": {
+         "carrier": "KU",
+         "number": "301"
+        },
+        "id": "GEQKhHqJYVxKnQQx",
+        "cabin": "COACH",
+        "bookingCode": "L",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LdaFcDEPmlLRmCPY",
+          "aircraft": "747",
+          "arrivalTime": "2016-10-26T05:10+05:30",
+          "departureTime": "2016-10-25T22:30+03:00",
+          "origin": "KWI",
+          "destination": "BOM",
+          "originTerminal": "M",
+          "destinationTerminal": "2",
+          "duration": 250,
+          "mileage": 1713,
+          "meal": "Meal",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "carrier": "KU",
+        "origin": "FRA",
+        "destination": "BOM",
+        "basisCode": "LLOWDE1"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "segmentId": "GXqPiNL4crEakWAo"
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "A8u0p68rHvBNXFKqF0VRDWIMUGTZ7NR6JGIYA7pzWdmA",
+        "segmentId": "GEQKhHqJYVxKnQQx"
+       }
+      ],
+      "baseFareTotal": "EUR247.00",
+      "saleFareTotal": "EUR247.00",
+      "saleTaxTotal": "EUR93.94",
+      "saleTotal": "EUR340.94",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "YX_001",
+        "chargeType": "GOVERNMENT",
+        "code": "YX",
+        "country": "KW",
+        "salePrice": "EUR0.73"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "YQ_I",
+        "chargeType": "CARRIER_SURCHARGE",
+        "code": "YQ",
+        "salePrice": "EUR9.12"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "DE_001",
+        "chargeType": "GOVERNMENT",
+        "code": "DE",
+        "country": "DE",
+        "salePrice": "EUR9.10"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "OY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "OY",
+        "country": "DE",
+        "salePrice": "EUR41.49"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "RA_002",
+        "chargeType": "GOVERNMENT",
+        "code": "RA",
+        "country": "DE",
+        "salePrice": "EUR33.50"
+       }
+      ],
+      "fareCalculation": "FRA KU X/KWI KU BOM 277.19LLOWDE1 NUC 277.19 END ROE 0.891079 FARE EUR 247.00 XT 9.10DE 41.49OY 33.50RA 0.73YX 9.12YQ",
+      "latestTicketingTime": "2016-10-25T09:14-04:00",
+      "ptc": "ADT",
+      "refundable": true
+     }
+    ]
+   }
+  ]
+ }
+}
