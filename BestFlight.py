@@ -24,7 +24,7 @@ code = {
       }
     ],
     "refundable": "false",
-    "solutions": 1
+    "solutions": 2
   }
 }
 jsonreq = json.dumps(code, encoding = 'utf-8')
@@ -41,20 +41,21 @@ response = flight.read()
 #response = json.loads(flight)
 #print(response)
 
-#soup = BeautifulSoup(response)
-#output =  [x for x in response if x=['saleTotal'] ]
-#print(output)
-
 
 response = json.loads(response)
 
 for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][0]["leg"]):
      print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][1]["leg"]): 
+    print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+
       
 
-#for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][0]["leg"]):
- #     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][0]["leg"]):
+     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
 
+for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][1]["leg"]):
+     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
 
 
 
