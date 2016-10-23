@@ -34,10 +34,10 @@ try:
 except urllib2.HTTPError, e:
   print( "sss", e.fp.read())
 response = flight.read()
-print ("specify targetfile")
-targetfile = raw_input('>')
-targetfiletxt = open(targetfile,'w')
-targetfiletxt.write(response)
+#print ("specify targetfile")###
+#targetfile = raw_input('>')###
+#targetfiletxt = open(targetfile,'w')###
+#targetfiletxt.write(response)####
 #response = json.loads(flight)
 #print(response)
 
@@ -45,15 +45,19 @@ targetfiletxt.write(response)
 #output =  [x for x in response if x=['saleTotal'] ]
 #print(output)
 
-#print (response.slice[].maxStops])
-#response = json.loads(response)
 
-#for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][0]["leg"]):
-#      print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+response = json.loads(response)
+
+for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][0]["leg"]):
+     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
       
-#for flightinfo in (response["trips"]["data"])      
-   
-#print ('"saleTotal":%d', response["trips"]["tripOption"][0]["pricing"][0]["saleTotal"])
+
+#for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][0]["leg"]):
+ #     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+
+
+
+
 #flight.close()
 #print(row)
 #print(response)
