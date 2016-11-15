@@ -1,8 +1,5 @@
-#from pprint import pprint
 import urllib2
 import json
-#from BeautifulSoup import BeautifulSoup
-#from sys import argv
 
 url = "https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyC5e31J4CEa1ROwKhXlJevQ6CtmJ0xK_4M"
 code = {
@@ -20,44 +17,54 @@ code = {
         "kind": "qpxexpress#sliceInput",
         "origin": "FRA",
         "destination": "BOM",
-        "date": "2016-10-25",
+        "date": "2017-03-25",
       }
     ],
     "refundable": "false",
-    "solutions": 2
+    "solutions": 12
   }
 }
 jsonreq = json.dumps(code, encoding = 'utf-8')
 req = urllib2.Request(url, jsonreq, {'Content-Type': 'application/json'})
+
 try:
-  flight = urllib2.urlopen(req)
+    flight = urllib2.urlopen(req)
+
 except urllib2.HTTPError, e:
-  print( "sss", e.fp.read())
+    print( "sss", e.fp.read())
 response = flight.read()
-#print ("specify targetfile")###
-#targetfile = raw_input('>')###
-#targetfiletxt = open(targetfile,'w')###
-#targetfiletxt.write(response)####
-#response = json.loads(flight)
-#print(response)
+
 
 
 response = json.loads(response)
+  
+i = 0
+while(i < len(response["trips"]["tripOption"])):
+    print "Option "+str(i+1)
+    print ("Sale total: %s " %(response["trips"]["tripOption"][i]["saleTotal"]))
+    j=0
+    while (j< len(response["trips"]["tripOption"][i]["slice"][0]["segment"])):
+        for info in (response["trips"]["tripOption"][i]["slice"][0]["segment"][j]["leg"]):
+            print ("Source: %s , Destination: %s , departure time : %s , arrival time : %s "%( 
+            info["origin"],
+            info["destination"],
+            info["departureTime"], 
+            info["arrivalTime"]))
+        j=j+1
+    i= i+1
+    
+    
 
-for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][0]["leg"]):
-     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
-for info in (response["trips"]["tripOption"][0]["slice"][0]["segment"][1]["leg"]): 
-    print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
-
-      
-
+             
+    
+'''version 1
 for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][0]["leg"]):
-     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+    print ("Source: %s , Destination: %s ,departure time : %s , arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
 
 for info in (response["trips"]["tripOption"][1]["slice"][0]["segment"][1]["leg"]):
-     print ("Source: %s , Destination: %s ,departure time : %s arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
-
-
+    print ("Source: %s , Destination: %s ,departure time : %s , arrival time : %s "%( info["origin"], info["destination"],info["departureTime"], info["arrivalTime"]))
+    print ("Sale total: %s " %(response["trips"]["tripOption"][1]["saleTotal"]))
+'''
 
 #flight.close()
 #print(row)
