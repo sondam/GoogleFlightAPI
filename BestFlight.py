@@ -17,11 +17,18 @@ code = {
         "kind": "qpxexpress#sliceInput",
         "origin": "FRA",
         "destination": "BOM",
-        "date": "2017-03-25",
+        "date": "2017-10-09",
+      },
+      {
+        "kind": "qpxexpress#sliceInput",
+        "origin": "BOM",
+        "destination": "FRA",
+        "date": "2017-10-25",
       }
+
     ],
     "refundable": "false",
-    "solutions": 12
+    "solutions": 1
   }
 }
 jsonreq = json.dumps(code, encoding = 'utf-8')
@@ -37,21 +44,28 @@ response = flight.read()
 
 
 response = json.loads(response)
-  
+#print response 
 i = 0
 while(i < len(response["trips"]["tripOption"])):
     print "Option "+str(i+1)
     print ("Sale total: %s " %(response["trips"]["tripOption"][i]["saleTotal"]))
-    j=0
-    while (j< len(response["trips"]["tripOption"][i]["slice"][0]["segment"])):
-        for info in (response["trips"]["tripOption"][i]["slice"][0]["segment"][j]["leg"]):
-            print ("Source: %s , Destination: %s , departure time : %s , arrival time : %s "%( 
-            info["origin"],
-            info["destination"],
-            info["departureTime"], 
-            info["arrivalTime"]))
-        j=j+1
+    k=0
+    response1 = response["trips"]["tripOption"][i]["slice"]
+    #print "response1 = " + str(len(response1))
+    while (k < len(response1)):
+       # print "segmnet = " + str(len(response1[k]["segment"]))
+        j=0
+        while (j< len(response1[k]["segment"])):
+            for info in (response1[k]["segment"][j]["leg"]):
+                print ("Source: %s , Destination: %s , departure time : %s , arrival time : %s "%(
+                info["origin"],
+                info["destination"],
+                info["departureTime"], 
+                info["arrivalTime"]))
+            j=j+1
+        k= k+1
     i= i+1
+    
     
     
 
